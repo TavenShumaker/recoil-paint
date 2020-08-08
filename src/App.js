@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from './components/Main';
 import { RecoilRoot, useRecoilValue } from 'recoil';
-import Recoilize from './package';
+import RecoilizeDebugger from 'r3c071z3';
 import * as atoms from './recoil/atoms.js';
 import * as selectors from './recoil/selectors.js'
 
@@ -15,7 +15,7 @@ function App() {
   const itemIdSelectors = useRecoilValue(itemIdsState).map(itemId => itemWithId(itemId))
 
   return [
-    <Recoilize 
+    <RecoilizeDebugger 
       nodes={[
         canvasLayoutState,
         backgroundColorState,
@@ -26,7 +26,8 @@ function App() {
         ...itemIdSelectors,
         selectionBoundingBox,
         selectedItemsSelector,
-      ]} />,
+      ]} 
+      root={document.getElementById('root')} />,
     <Main />
   ]
 }

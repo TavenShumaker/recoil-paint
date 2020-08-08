@@ -27,7 +27,7 @@ export const itemWithId = memoize(id => selector({
 
 function itemsSelector(key, state) {
   return selector({
-    key,
+    key: `${key}`,
     get: ({ get }) => {
       const ids = get(state);
       if (!ids.length) {
