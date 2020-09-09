@@ -13,7 +13,7 @@
     "react-native-web": "^0.12.2",
     "react-scripts": "3.4.1",
     "recoil": "^0.0.10",
-    "recoilize": "^0.1.1"
+    "recoilize": "^0.8.0"
   },
   "homepage": "https://jimliu.github.io/recoil-paint/",
   "scripts": {

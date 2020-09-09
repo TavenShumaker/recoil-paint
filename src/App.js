@@ -28,6 +28,10 @@ function App() {
     itemWithId(itemId)
   );
 
+  // const statisticQuerySelectors = useRecoilValue(itemIdsState).map((itemId) =>
+  //   statisticsWithId(itemId)
+  // );
+
   return [
     <RecoilizeDebugger
       nodes={[
