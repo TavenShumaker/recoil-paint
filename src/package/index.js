@@ -24,7 +24,7 @@ export default function Recoilize(props) {
   }
 
   const snapshot = useRecoilSnapshot();
-
+  console.log('index.js snapshot: ', snapshot);
   // Local state of all previous snapshots to use for time traveling when requested by dev tools.
   const [snapshots, setSnapshots] = useState([snapshot]);
   // const [isRestoredState, setRestoredState] = useState(false);
