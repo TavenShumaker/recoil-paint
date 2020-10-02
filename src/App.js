@@ -33,20 +33,7 @@ function App() {
   // );
 
   return [
-    <RecoilizeDebugger
-      nodes={[
-        canvasLayoutState,
-        backgroundColorState,
-        itemIdsState,
-        selectedIdsState,
-        movingItemIdsState,
-        ...itemIds,
-        ...itemIdSelectors,
-        selectionBoundingBox,
-        selectedItemsSelector,
-      ]}
-      root={document.getElementById('root')}
-    />,
+    <RecoilizeDebugger/>,
     <Main />,
   ];
 }
